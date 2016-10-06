@@ -1,0 +1,116 @@
+<html>
+	<style type="text/css">
+   		body {
+			background-image:url(https://jerbcarter.github.io/Elena/hummingbird.jpg);
+    			background-position:center;
+    			background-repeat:repeat;
+			background-size: 50px 60px;
+			margin: 0px;
+			padding: 0px;
+		}
+		#header {
+			width: 96%;
+    			background-position: 0% 0%;
+			background-image:url(https://jerbcarter.github.io/Elena/banner.jpg);
+    			background-repeat:no-repeat;
+		}
+		#bgTopCover {
+			background-color: black;
+    			background-position: top left;
+    			background-repeat:no-repeat;
+			background-size: 300px 600px;
+		}
+		#bgTopVideo {
+    			background-position: top right;
+    			background-repeat:no-repeat;
+			max-height:100%;
+			max-width:100%;
+		}
+		audio.player {
+ 			width: 250px;
+			text-align: center;
+		}
+		div.video {
+			background-color: black;
+			float: left;
+			margin: 10px;
+   			padding: 10px;
+   			width: 63.25%;
+   			max-height: 46%;
+   			border: 1px solid black;
+		}
+		div.cover {
+			float: left;
+			margin: 10px;
+   			padding: 10px;
+			width: 320px;
+			height: 500px;
+   			border: 1px solid black;
+		}
+		div.wrapper {
+			background-color: black;
+			float: left;
+			margin: 10px;
+   			padding: 10px;
+   			border: 1px solid black;
+			width: 46%;
+		}
+		div.artwork {
+			text-align: center;
+			background-color: black;
+			float: left;
+			margin: 5px;
+   			padding: 0px;
+   			border: 1px solid black;
+			max-height: 32%;
+			width: 40%;
+		}
+		div.lyrics {
+			background-color: black;
+			float: left;
+			margin: 5px;
+   			padding: 5px;
+   			border: 1px solid black;
+			max-height: 32%;
+			width: 55%;
+			overflow-y: scroll;
+		}
+
+	</style>
+		<div id="header">
+			<center>
+			<h1>
+				<font color="#DEF4F5">Elena Rae Carter</font>
+			</h1>
+			<h2>
+				<font color="#DEF4F5">She is delightfully chaotic... a beautiful mess. Loving her is a splendid adventure.</font>
+			</h2>
+		</div>
+		<div id="bgTopCover" class="cover">
+			<img src="https://jerbcarter.github.io/Elena/Elena_Cover.jpg" alt="Elena Cover" height=100% width=100%>
+		</div>
+		<div id="bgTopVideo" class="video">
+		<video id="myVideo" width=100% controls autoplay preload="metadata">
+			<source src="https://jerbcarter.github.io/Elena/ElenaRaeCarter.m4v" type="video/mp4">
+		</video>	
+		</div>
+	<body>
+		<script>
+			var vid = document.getElementById("myVideo"); 
+
+			function playVid() { 
+				vid.play(); 
+			} 
+		
+			function pauseVid() { 
+				vid.pause(); 
+			}
+		</script>
+	</body>
+</html>	
+
+
+
+
+
+
