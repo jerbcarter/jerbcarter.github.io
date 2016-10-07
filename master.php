@@ -156,7 +156,7 @@
 								$artistDir = stringReplaceHtml($artistDir); 
 								$albumDir = stringReplaceHtml($albumDir); 
 									echo "			 <div class=\"album\">\n";
-									echo "				<a href=\"./Media/Music/$artistDir/$albumDir/album.html\">\n";
+									echo "				<a href=\"https://jerbcarter.github.io/Media/Music/$artistDir/$albumDir/album.html\">\n";
 									echo "					<img class=\"rounded\" src=\"./Media/Music/$artistDir/$albumDir/albumCover.png\" width=\"187\" height=\"187\">\n";
 									echo "				</a>\n";
 									echo "			</div>\n";
