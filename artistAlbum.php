@@ -41,7 +41,7 @@
 			getid3_lib::CopyTagsToComments($ThisFileInfo); 
 			if(isset($ThisFileInfo['comments']['picture'][0])){
 				$Image = $ThisFileInfo['comments']['picture'][0]['data'];
-				file_put_contents("/Library/WebServer/Documents/WebProject/jerbcarter.github.io/Media/Music/$argument1/$argument2/albumCover.png",$Image);
+				file_put_contents("/Library/WebServer/Documents/WebProject/Temp/jerbcarter.github.io/Media/Music/$argument1/$argument2/albumCover.png",$Image);
 			}
    				echo "		body {\n";
 				echo "			background-image:url(\"https://jerbcarter.github.io/Media/Music/$myArtistHtmlName/$myAlbumHtmlName/albumCover.png\");\n";
@@ -164,7 +164,7 @@
 				$lyrics = stringReplace($lyrics);
 				$baseFile = basename("$file");
 				$destination = "https://jerbcarter.github.io/Media/Music/$myArtistName/$myAlbumName";
-				$linkTarget = "/Library/WebServer/Documents/WebProject/jerbcarter.github.io/Media/Music/$argument1/$argument2/$baseFile";
+				$linkTarget = "/Library/WebServer/Documents/WebProject/Temp/jerbcarter.github.io/Media/Music/$argument1/$argument2/$baseFile";
 				if (! file_exists($linkTarget)) {
 					symlink("$file", "$linkTarget");
 				}
