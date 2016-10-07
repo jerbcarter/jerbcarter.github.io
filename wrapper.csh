@@ -1,5 +1,6 @@
 #!/bin/tcsh -f
-set savePath = /Library/WebServer/Documents/WebProject/jerbcarter.github.io/Media/Music
+set startPath = `pwd`
+set savePath = $startPath/Media/Music
 set artistList = ()
 set temp = ""
 cd /Users/jerbcarter/Music/iTunes/iTunes\ Media/Music/
@@ -23,9 +24,9 @@ foreach x ($artistList:q)
 				mkdir "$savePath/$x/$dir"
 			endif
 			cd "$savePath/$artist/$album"
-			php /Library/WebServer/Documents/WebProject/jerbcarter.github.io/artistAlbum.php "$artist" "$album" > album.html
+			php $startPath/artistAlbum.php "$artist" "$album" > album.html
 		end
 	endif
 end
-cd /Library/WebServer/Documents/WebProject/jerbcarter.github.io
+cd $startPath 
 php ./master.php > ./index.html

@@ -29,7 +29,7 @@
 ?>
 	<style type="text/css">
 		body {
-			background-image:url("https://jerbcarter.github.io/Media/music.jpeg");
+			background-image:url("./Media/music.jpeg");
 			background-repeat:repeat;
     			float:left;
 			background-size: 40px 40px;
@@ -156,8 +156,8 @@
 								$artistDir = stringReplaceHtml($artistDir); 
 								$albumDir = stringReplaceHtml($albumDir); 
 									echo "			 <div class=\"album\">\n";
-									echo "				<a href=\"https://jerbcarter.github.io/Media/Music/$artistDir/$albumDir/album.html\">\n";
-									echo "					<img class=\"rounded\" src=\"https://jerbcarter.github.io/Media/Music/$artistDir/$albumDir/albumCover.png\" width=\"187\" height=\"187\">\n";
+									echo "				<a href=\"./Media/Music/$artistDir/$albumDir/album.html\">\n";
+									echo "					<img class=\"rounded\" src=\"./Media/Music/$artistDir/$albumDir/albumCover.png\" width=\"187\" height=\"187\">\n";
 									echo "				</a>\n";
 									echo "			</div>\n";
 								}

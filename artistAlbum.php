@@ -168,7 +168,7 @@
 				if (! file_exists($linkTarget)) {
 					symlink("$file", "$linkTarget");
 				}
-				$baseFile = stringReplace($file);
+				$baseFile = stringReplace($baseFile);
     				echo "		<div class=\"wrapper\">\n";
     				echo "			<div class=\"music\">\n";
     				echo "				<div class=\"artwork\">\n";
