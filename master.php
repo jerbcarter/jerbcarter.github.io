@@ -29,7 +29,7 @@
 ?>
 	<style type="text/css">
 		body {
-			background-image:url("./Media/music.jpeg");
+			background-image:url("https://jerbcarter.github.io/Media/music.jpeg");
 			background-repeat:repeat;
     			float:left;
 			background-size: 40px 40px;

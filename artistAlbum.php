@@ -24,6 +24,7 @@
 		$newString = str_replace("ÿ","%C3%BF",$newString);
 		$newString = str_replace("ñ","%C3%B1",$newString);
 		$newString = str_replace("ó","%C3%B3",$newString);
+		$newString = str_replace(" ","%20",$newString);
 		return $newString;
 	}
 	$argument1 = $argv[1];
